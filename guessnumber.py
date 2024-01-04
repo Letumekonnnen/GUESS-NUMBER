@@ -24,13 +24,13 @@ def play_guessing_game():
         user_guess = get_user_input()
         
         if user_guess == random_number:
-            print("You got it!")
+            print("Congratulations! You guessed the number.")
             break
         elif user_guess > random_number:
-            print("You were above the number!")
+            print("Too high!")
         else:
-            print("You were below the number!")
+            print("Too low!")
     
-    print("You got it in", guesses, "guesses")
+    print("You guessed it in", guesses, "guesses.")
 
 play_guessing_game()
