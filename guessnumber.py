@@ -6,8 +6,8 @@ def get_user_input():
         
         if user_input.isdigit():
             return int(user_input)
-        else:
-            print("Please type a number next time.")
+        
+        print("Please type a valid number.")
 
 def play_guessing_game():
     top_of_range = get_user_input()
@@ -31,6 +31,6 @@ def play_guessing_game():
         else:
             print("Too low!")
     
-    print("You guessed it in", guesses, "guesses.")
+    print(f"You guessed it in {guesses} guesses.")
 
 play_guessing_game()
