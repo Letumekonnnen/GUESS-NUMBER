@@ -33,4 +33,17 @@ def play_guessing_game():
     
     print(f"You guessed it in {guesses} guesses.")
 
+def play_again():
+    while True:
+        user_choice = input("Do you want to play again? (yes/no): ")
+        
+        if user_choice.lower() == "yes":
+            play_guessing_game()
+        elif user_choice.lower() == "no":
+            print("Thank you for playing! Goodbye.")
+            break
+        else:
+            print("Please enter a valid choice.")
+
 play_guessing_game()
+play_again()
